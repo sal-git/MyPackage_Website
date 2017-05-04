@@ -1,0 +1,17 @@
+<h2 class="page-header">Dashboard</h2>
+<p>Welcome to your package page</p>
+
+<div class="package-list">
+  <div *ngFor='let package of packages'>
+    <div class="col-md-1">
+      <img src="https://image.flaticon.com/icons/svg/214/214273.svg" width="20" height="20">
+    </div>
+    <div class="col-md-7">
+      {{packages.from}} <b>|</b>
+      {{packages.to}} <b>|</b>
+    </div>
+    <div class="col-md-4">
+      <input type="button" value"Delete" class="btn btn-danger">
+    </div>
+  </div>
+</div>

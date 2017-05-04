@@ -1,0 +1,25 @@
+<h2 class="page-header">Dashboard</h2>
+<p>Welcome to your package page</p>
+
+<form class="well" (submit)="addTask($event)">
+  <div class="form-group">
+    <a class="form-control" placeholder="Add Package..."></a>
+  </div>
+</form>
+
+<div class="package-list">
+  <div *ngFor='let package of packages'>
+    <div class="col-md-1">
+      <img src="https://image.flaticon.com/icons/svg/214/214273.svg" width="20" height="20">
+    </div>
+    <div class="col-md-7">
+      <b><u>FROM:   </u></b>   {{package.from}} <b></b>
+      <b><u>TO:   </u></b>   {{package.to}} <b></b>
+      <b><u>TRCK:   </u></b>   {{package.tracking}} <b></b>
+    </div>
+    <div class="col-md-4">
+      <a class="btn btn-danger">Delete</a>
+    </div>
+    <br><br><br>
+  </div>
+</div>
